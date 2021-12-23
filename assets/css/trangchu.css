@@ -1,0 +1,379 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Header */
+
+.header {
+    max-width: 100%;
+    height: 120px;
+    background-color: #F6412D;
+}
+
+.header .first {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 34px;
+}
+
+.first .navbar-left {
+    display: flex;
+    align-self: center;
+}
+
+.first .navbar-left a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.first span.connect {
+    line-height: 20px;
+    color: #fff;
+}
+
+.first span.connect a i {
+    font-size: 16px;
+}
+
+.first .separator {
+    border: 0.5px solid hsla(0, 0%, 100%, .4);
+    height: 20px;
+    margin: 0 5px;
+}
+
+.first a.download {
+    position: relative;
+}
+
+.first a.download .download-qr-code {
+    width: 180px;
+    height: 250px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+
+.first a.download:hover .download-qr-code {
+    display: block;
+}
+
+.first a.download .download-qr-code>img {
+    width: 100%;
+}
+
+.download-qr-code .operating>img {
+    width: 180px;
+}
+
+.first ul.navbar-right {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+}
+
+.first ul.navbar-right li {
+    padding: 0 10px;
+}
+
+.first ul.navbar-right li a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.first ul.navbar-right li a i {
+    padding-right: 5px;
+}
+
+.header .second {
+    max-width: 1200px;
+    height: 86px;
+    padding: 16px 0 10px 0;
+    display: flex;
+}
+
+.second .header-logo {
+    max-width: 200px;
+    height: 100%;
+}
+
+.header-logo>a>img {
+    max-width: 100%;
+}
+
+.header-search {
+    width: 840px;
+    height: 60px;
+}
+
+.header-search .search-bar {
+    display: flex;
+    height: 40px;
+    background-color: #fff;
+}
+
+.search {
+    flex: 1;
+}
+
+.search>input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 10px;
+}
+
+button.search-icon {
+    width: 60px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    background: #F6412D;
+    margin: 3px;
+    justify-content: center;
+}
+
+.search-icon>i {
+    color: #fff;
+}
+
+.header-search .search-hot {
+    height: 20px;
+}
+
+.search-hot .hot-list a {
+    font-size: 13px;
+    padding-right: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-cart {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-icon {
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+}
+
+.no-item {
+    width: 400px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    padding: 60px 0;
+    top: 50px;
+    text-align: center;
+    display: none;
+}
+
+.no-item::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    width: 30px;
+    height: 17px;
+    z-index: 100;
+    right: 0px;
+    border-style: solid;
+    border-width: 0px 15px 15px 15px;
+    border-color: transparent transparent #fff transparent;
+}
+
+.header-cart .cart-icon:hover .no-item {
+    display: block;
+}
+
+.no-item>img {
+    width: 100px;
+    height: 100px;
+}
+
+.sub-no-item {
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+/* End Header */
+
+
+/* Block1 */
+
+.block1 {
+    width: 100%;
+}
+
+.block1 .block1-container {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.block1 .block1-container>.row {
+    margin: 0;
+}
+
+#carouselExampleIndicators>ol.carousel-indicators>li {
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    /* width: 30px; */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+#carouselExampleIndicators>ol.carousel-indicators>li.active {
+    background-color: #F6412D;
+}
+
+.carousel-inner>.carousel-item>img {
+    border-radius: 5px;
+}
+
+.block1-container>.row>.col-xl-8,
+.block1-container>.row>.col-xl-4 {
+    padding: 0;
+}
+
+.block1-container>.row>.col-xl-4 {
+    padding-left: 5px;
+}
+
+.block1-container>.row>.col-xl-4>.col-xl-12:last-child {
+    padding-top: 5px;
+}
+
+.col-xl-4>.col-xl-12>img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.block1>.benefits-list {
+    width: 1200px;
+    margin: 30px auto 0;
+    min-height: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits-list>a {
+    color: #000;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.benefits-list>a>.benefits-item {
+    width: 140px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.benefits-item:hover {
+    transform: translateY(-0.5rem);
+}
+
+.benefits-item>img {
+    width: 45px;
+}
+
+.benefits-item>p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* End Block1 */
+
+
+/* Block2 */
+
+.block2 {
+    background: #f5f5f5;
+}
+
+.block2 .block2-banner,
+.block2 .block2-category {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.block2 .block2-category {
+    margin-top: 20px;
+    /* background: #fff; */
+}
+
+.category-header {
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.category-name {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: 500;
+}
+
+.category-content .category-list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.category-content .category-list .category-item {
+    width: 10%;
+    background: #fff;
+    text-align: center;
+}
+
+.category-item>a {
+    text-decoration: none;
+    color: #000;
+}
+
+.item-detail:hover {
+    transform: translateZ(0);
+    z-index: 1;
+    border-color: rgba(0, 0, 0, .12);
+    box-shadow: 0 0 0.8125rem 0 rgb(0 0 0 / 5%);
+}
+
+.item-detail {
+    border-right: 1px solid rgba(0, 0, 0, .05);
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+.category-item>a>.item-detail>.item-detail-img>img {
+    width: 80%;
+    height: 80%;
+    margin-top: 10%;
+}
+
+.category-item>a>.item-detail>.item-detail-name>p {
+    font-size: 14px;
+}
+
+
+/* End Block2 */
