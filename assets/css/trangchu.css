@@ -310,6 +310,9 @@ button.search-icon {
     background: #f5f5f5;
 }
 
+
+/* Danh mục */
+
 .block2 .block2-banner,
 .block2 .block2-category {
     max-width: 1200px;
@@ -366,14 +369,65 @@ button.search-icon {
 }
 
 .category-item>a>.item-detail>.item-detail-img>img {
-    width: 80%;
-    height: 80%;
-    margin-top: 10%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.item-detail-name {
+    height: 50px;
 }
 
 .category-item>a>.item-detail>.item-detail-name>p {
     font-size: 14px;
 }
+
+
+/* End Danh mục */
+
+
+/* Flash Sale */
+
+.block2 .block2-flash-sale {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.block2 .block2-flash-sale .flash-sale-header {
+    background-color: #fff;
+}
+
+.flash-sale-header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header-container,
+.header-see-all {
+    height: 30px;
+    line-height: 30px;
+}
+
+.header-container .flash-sale-name,
+.header-container .flash-sale-name>img {
+    height: 100%;
+}
+
+.header-see-all>.see-all-item {
+    color: #000;
+}
+
+.header-see-all>.see-all-item>.see-all {
+    border: 0;
+    background-color: #fff;
+    padding-right: 5px;
+}
+
+
+/* End Flash Sale */
 
 
 /* End Block2 */
